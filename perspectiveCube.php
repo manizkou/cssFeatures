@@ -12,7 +12,8 @@
 			width: 2em;
 			margin: 1.5em auto;
 			transform-style: preserve-3d;
-			transform: rotateX(-40deg) rotateY(32deg);
+			/*transform: rotateX(-40deg) rotateY(32deg);*/
+			animation: cubeMove 5s linear infinite alternate;
 		}
 
 		.side{
@@ -21,7 +22,7 @@
 			height: 2em;
 
 			background: rgba(255,123,101,0.6);
-			/*background: red;*/
+			
 
 			border: 1px solid rgba(0,0,0,.5);
 
@@ -36,6 +37,15 @@
 		.left{ transform: rotateY(-90deg)  translateZ(1em); }
 		.bottom{ transform: rotateX(-90deg)  translateZ(1em); }
 		.back{ transform: rotateY(-180deg) translateZ(1em); }
+
+		@keyframes cubeMove{
+			0%{
+				transform: rotateX(180deg) rotateY(0deg); 
+			}
+			10%{
+				transform: rotateX(0deg) rotateY(180deg);
+			}
+		}
 
 	</style>
 </head>
