@@ -8,7 +8,8 @@
 	<!-- Water Wave Menu Item Hover Effects -->
 
 	<ul>
-		<li><a href="#" data-text="Home">Home</a></li>
+		<li><a href="index.php" data-text="Home">Home</a></li>
+		<li><a href="perspectiveCube.php" data-text="3D Cube">3D CUBE</a></li>
 		<li><a href="#" data-text="About">About</a></li>
 		<li><a href="#" data-text="Services">Services</a></li>
 		<li><a href="#" data-text="Portfolio">Portfolio</a></li>
